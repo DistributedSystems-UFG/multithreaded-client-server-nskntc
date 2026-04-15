@@ -15,7 +15,7 @@ def tratar_conexao(conn, addr):
 s = socket(AF_INET, SOCK_STREAM)
 s.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 s.bind((HOST, PORT))
-s.listen(50)
+s.listen(500)
 print(f"Servidor multithread escutando em {HOST}:{PORT}")
 
 while True:

@@ -10,7 +10,7 @@ def gerar_requisicao():
     if opcao == 0:
         return {"operacao": "fatorial", "parametro": random.randint(1, 20)}
     elif opcao == 1:
-        return {"operacao": "contar_primos", "parametro": random.randint(100, 1000)}
+        return {"operacao": "contar_primos", "parametro": random.randint(5000, 20000)}
     elif opcao == 2:
         return {"operacao": "is_primo", "parametro": random.randint(2, 10000)}
     elif opcao == 3:
@@ -33,7 +33,7 @@ def enviar_requisicao(requisicao):
     return resposta
 
 def main():
-    NUM_REQUISICOES = 200
+    NUM_REQUISICOES = 500
 
     print(f"Cliente single-thread - enviando {NUM_REQUISICOES} requisicoes...")
     inicio = time.time()
