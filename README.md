@@ -2,6 +2,8 @@
 
 # Cliente-Servidor Multithread (ASR 05)
 
+Nícolas Santana Kruger - 2022200545
+
 ## Descricao
 
 Sistema cliente-servidor TCP com versoes single-thread e multithread para comparacao de desempenho.
